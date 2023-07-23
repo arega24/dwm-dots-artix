@@ -18,19 +18,19 @@ pfetch
 #------ CUSTOM SCRIPTS ------
 
 shared-mount(){
-	sudo mount -t nfs 192.168.1.124:/mnt/Shared_Files/Shared_Files /media/Shared/  
+	sudo mount -t nfs 192.168.1.124:/mnt/Shared_Files/Shared_Files /Documentos/NAS/Shared/  
 }
 
 music-mount(){
-	sudo mount -t nfs 192.168.1.124:/mnt/Secured_Media/Music /media/Music/  
+	sudo mount -t nfs 192.168.1.124:/mnt/Secured_Media/Music /Documentos/NAS/Music/  
 }
 
 movies-mount(){
-	sudo mount -t nfs 192.168.1.124:/mnt/Secured_Media/Movies /media/Movies/ 
+	sudo mount -t nfs 192.168.1.124:/mnt/Secured_Media/Movies /Documentos/NAS/Movies/ 
 }
 
 series-mount(){
-	sudo mount -t nfs 192.168.1.124:/mnt/Secured_Media/Series /media/Series/  
+	sudo mount -t nfs 192.168.1.124:/mnt/Secured_Media/Series /Documentos/NAS/Series/  
 }
 
 r(){
