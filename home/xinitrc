@@ -1,7 +1,6 @@
 #!/bin/sh
 
 pipewire &
-pipewire-pulse &
 
 picom &
 wal -n -R & 
@@ -11,6 +10,9 @@ setxkbmap pt &
 
 xrandr --output DP-3 --primary --mode 1920x1080 --rate 75 --rotate normal
 redshift -P -O 4200 &
+
+# only on laptop
+# sudo brillo -S 10
 
 urxvtd -q -o -f &
 
