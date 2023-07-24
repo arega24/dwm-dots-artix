@@ -12,7 +12,7 @@ suspend="Sleep"
 # Variable passed to rofi 
 options="$power_off\n$reboot\n$lock\n$suspend"  #\n$log_out" 
 
-case "$(echo "$options" | $rofi_command -dmenu -selected-row 2)" in     
+case "$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)" in     
 	$power_off)         
 		sudo shutdown -P now       
 		;;     
