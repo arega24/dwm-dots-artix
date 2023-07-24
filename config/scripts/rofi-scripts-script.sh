@@ -11,7 +11,7 @@ four="Wifi"
 # Variable passed to rofi 
 options="$one\n$four\n$too\n$three"   
 
-case "$(echo "$options" | $rofi_command -dmenu -selected-row 2)" in     
+case "$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)" in     
 	$one)         
 	    ~/.config/scripts/rofi-usb-mount.sh	
 		;;     
