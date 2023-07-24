@@ -22,6 +22,6 @@ case "$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)" in
 		rofi -show calc -no-show-match -no-sort -display-calc "Calc: " 		
 		;;     
 	$four)         
-	    ~/.config/scripts/rofi-wifi-menu-iwd.sh	
+	    ~/.config/scripts/rofi-wifi-menu-NM.sh
 		;;     
 esac
