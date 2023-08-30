@@ -16,7 +16,7 @@ map f :fzf_jump
 map x cut
 
 map gd cd /run/media
-map gs cd /media
+map gs cd ~/Documentos/NAS
 map gt cd ~/.local/share/Trash/files  
 map gc cd ~/.config
 map gu cd ~/Documentos/UNI-Shared/
