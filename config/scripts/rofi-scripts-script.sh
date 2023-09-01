@@ -7,9 +7,10 @@ one="USB's"
 too="Mixer" 
 three="Calculator" 
 four="Wifi" 
+five="Games" 
 
 # Variable passed to rofi 
-options="$one\n$four\n$too\n$three"   
+options="$one\n$four\n$too\n$three\n$five"   
 
 case "$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)" in     
 	$one)         
@@ -22,6 +23,9 @@ case "$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)" in
 		rofi -show calc -no-show-match -no-sort -display-calc "Calc: " 		
 		;;     
 	$four)         
-	    ~/.config/scripts/rofi-wifi-menu-NM.sh
+	    ~/.config/scripts/rofi-wifi-menu-NM.sh	
+		;;     
+	$five)         
+	    ~/.config/scripts/rofi-term-games-script.sh
 		;;     
 esac

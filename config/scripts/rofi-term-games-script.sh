@@ -12,7 +12,7 @@ six="Greed"
 seven="MyMan"
 
 # Variable passed to rofi 
-options="$one\n$four\n$too\n$three"   
+options="$one\n$four\n$too\n$three\n$four\n$five\n$six\n$seven"   
 
 case "$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)" in     
 	$one)         
